@@ -1,6 +1,6 @@
 import { React, useCallback, useEffect, useState } from "react";
 import Search from "../components/Search";
-import SortRepos from "../components/SortRepos";
+import SortRepo from "../components/SortRepos";
 import toast from "react-hot-toast";
 import ProfileInfo from "../components/ProfileInfo";
 import Repos from "../components/Repos";
@@ -13,7 +13,7 @@ function Homepage() {
 	const [sortType, setSortType] = useState("recent"); // this is the first category the repos will sorted into
   
   const getUserProfileAndRepos = useCallback(
-    async (username = "Alex-is-Gonzalez") => {
+    async (username = "kevinngonzales") => {
 		  setLoading(true);
       try {
         const res = await fetch(`/api/users/profile/${username}`);
@@ -47,7 +47,9 @@ function Homepage() {
 		setRepos([]);
 		setUserProfile(null);
 
-		const { userProfile, repos } = await getUserProfileAndRepos(username);
+		const { userProfile, repos } = await 
+
+    getUserProfileAndRepos(username);
 
 		setUserProfile(userProfile);
 		setRepos(repos);
@@ -69,9 +71,11 @@ function Homepage() {
 
   return (
 		<div>
+			<div className="">
 			<Search onSearch={onSearch} />
 			{repos.length > 0 && <SortRepo onSort={onSort} sortType={sortType} />}
-			<div>
+			<div>	
+			</div>
 				{userProfile && !loading && <ProfileInfo userProfile={userProfile} />}
 				{!loading && <Repos repos={repos} />}
 				{loading && <Spinner />}

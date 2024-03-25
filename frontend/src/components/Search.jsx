@@ -4,10 +4,10 @@ function Search({onSearch}) {
   const [username, setUsername] = useState("");
 
   return (
-    <form onSubmit={(e) => onSearch(e, username)}>
+    <form className="form-container" onSubmit={(e) => onSearch(e, username)}>
       <label htmlFor="default-search">Search</label>
       <div>
-        // we'll add a search icon, later
+        <img src="/search-icon.png" className="search-icon" />
         <input
           type="search"
           id="default-search"

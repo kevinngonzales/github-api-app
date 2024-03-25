@@ -1,5 +1,52 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 2px red solid; */
+}
+
+.side-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: larger;
+  padding: 20px;
+
+  /* border: 2px red solid; */
+}
+
+.profile-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+  /* border: 2px solid blue; */
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 2px solid yellow; */
+}
+
+.sort-repos-button-container {
+  display: flex;
+  justify-content: center;
+
+  /* border: 2px solid purple; */
+}
+
+/* specific stylings */
+
+.search-icon {
+  height: 40px;
+}
+
+.user-avatar {
+  border-radius: 50%;
 }

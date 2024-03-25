@@ -1,6 +1,6 @@
 import React from "react";
 
-function SortRepos({onSort, sortType}) {
+function SortRepo({onSort, sortType}) {
   const BUTTONS = [
     { type: "recent", text: "Most Recent" },
     { type: "stars", text: "Most Stars" },
@@ -8,7 +8,7 @@ function SortRepos({onSort, sortType}) {
   ];
 
   return (
-    <div>
+    <div className="sort-repos-button-container">
 			{BUTTONS.map((button) => (
 				<button
 					key={button.type}
@@ -23,4 +23,4 @@ function SortRepos({onSort, sortType}) {
   )
 }
 
-export default SortRepos;
+export default SortRepo;

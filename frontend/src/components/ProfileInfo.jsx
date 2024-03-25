@@ -8,12 +8,12 @@ function ProfileInfo({userProfile}) {
 
   return (
     // 1st div
-    <div>
+    <div className="profile-info-container">
       <div>
-        <div>
+        <div >
           {/* User Avatar */}
           <a href={userProfile?.html_url} target="_blank" rel="noreferrer">
-            <img src={userProfile?.avatar_url} alt="" />
+            <img className="user-avatar" src={userProfile?.avatar_url} alt="" />
           </a>
 
           {/* View on Github */}

@@ -2,7 +2,6 @@ import React from 'react'
 import Repo from './Repo'
 
 function Repos({repos}) {
-
   return (
     <div>
         <ol>

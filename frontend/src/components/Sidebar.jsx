@@ -8,7 +8,7 @@ function Sidebar() {
 
   return (
     <aside>
-      <nav>
+      <nav className="side-bar">
         <Link to="/" className="flex justify-center">
           GitHub
         </Link>
