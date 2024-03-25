@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  background-image: url(/bg.png);
   /* border: 2px red solid; */
 }
 
@@ -12,6 +12,7 @@ body {
   justify-content: space-around;
   font-size: larger;
   padding: 20px;
+  background-color: rgb(0, 0, 0, 0.5);
 
   /* border: 2px red solid; */
 }
@@ -22,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100vw;
+  background-color: rgb(0, 0, 0, 0.5);
 
   /* border: 2px solid blue; */
 }
@@ -30,6 +32,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(0, 0, 0, 0.5);
 
   /* border: 2px solid yellow; */
 }
@@ -37,6 +40,7 @@ body {
 .sort-repos-button-container {
   display: flex;
   justify-content: center;
+  background-color: rgb(0, 0, 0, 0.5);
 
   /* border: 2px solid purple; */
 }
