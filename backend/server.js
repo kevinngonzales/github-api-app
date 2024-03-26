@@ -18,6 +18,8 @@ const app = express();
 const PORT = process.env.PORT || 5050;
 const __dirname = path.resolve();
 
+console.log('dirname', __dirname)
+
 // determines how long user can be logged in after inactivity
 app.use(session(
     { 
