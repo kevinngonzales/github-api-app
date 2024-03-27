@@ -1,7 +1,5 @@
 # github-api-app
 
-https://tkhfellowships.slack.com/archives/D06R4JU2686/p1711441939616079?thread_ts=1711441913.858669&cid=D06R4JU2686
-
 ## About
 An application that uses Authentication with Passport.js which utilizes the Github API to fetch user profiles and repos. User can login or signup through Github. Users can also view and search for other Github users.
 
